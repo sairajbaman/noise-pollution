@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <!-- Awersome Fonts -->
+    <link rel="stylesheet" href="sound_stylsheet.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <title>Fitness Website</title>
+    <link rel="stylesheet" href="sound_stylsheet.css">
+</head>
+<body> 
+      <!-- Start Header-->
+      <header>
+          <nav>
+              <div class="open"><i class="fas fa-bars"></i></div>
+              <ul class="links">
+                  <li><a href="#" class="active">Home</a></li>
+                  <li><a href="#">about</a></li>
+                  <li><a href="#">services</a></li>
+                  <li><a href="#">register</a></li>
+                  <div class="close"><i class="fas fa-times"></i></div>
+              </ul>
+          </nav>
+          <div class="content"> 
+              <h1> We have two ears only: keep them safe, reduce noise pollution!</h1>
+              <button class="btn">get started</button>
+            </div>
+      </header>
+      <!-- Start About -->
+      <section class="about">
+          <div class="row">
+              <div class="image">
+                  <img src="pic 2.jpg">
+              </div>
+              <div class="content">
+                  <h1>a word about us</h1>
+                  <p>Noise pollution is considered to be any unwanted or disturbing sound that affects the health and well-being of humans and other organisms.caused by noisy machines, loudspeakers, vehicles, and other objects producing sound at high decibels. Even rock concerts are a cause of noise pollution. Like air and water pollution, noise pollution also adversely affects our health.</p>
+                    <p>A healthy lifestyle is only the
+                         secret of good helath.</p>
+                    <p>Your music may be someone else's noise: keep the volume down, reduce sound pollution!</p>
+                        <button class="btn">Learn more</button>
+              </div>
+          </div>
+      </section>
+      <!-- Start Services -->
+      <section class="services">
+          <h1>our services</h1>
+          <div class="container">
+              <div class="box">
+                  <img src="pic3.jpg">
+                  <div class="info">
+                      <h3>Public Awareness and Education</h3>
+                      <p>we create educational materials and campaigns to raise public awareness about the impacts of noise pollution and the steps individuals can take to reduce their noise footprint.</p>
+                      <button class="btn">more</button>
+                  </div>
+                  </div>
+                  <div class="box">
+                    <img src="pic4.jpg">
+                    <div class="info">
+                        <h3>Noise Complaint Managemen</h3>
+                        <p> we develop software or tools for efficiently managing and tracking noise complaints from the public, helping authorities respond to and address noise issues more effectively.</p>
+                            <button class="btn">more</button>
+                    </div>   
+                   
+                  </div>
+               </div>
+      </section>  
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- Javascript Section -->
+      <script>
+          var mainMenu = document.querySelector('.links')
+          var openMenu = document.querySelector('.open')
+          var closeMenu = document.querySelector('.close')
+
+          openMenu.addEventListener('click', show)
+          closeMenu.addEventListener('click', close)
+
+          function show(){
+              mainMenu.style.display = 'flex'
+              mainMenu.style.right = '0'
+          }
+          function close(){
+              mainMenu.style.right = '-60%'
+          }
+    </script>    
+
+
+
+      
+</body>   
+</html>
